@@ -1,0 +1,144 @@
+body {
+  background: rgb(196, 196, 196);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.page {
+  background: rgb(196, 196, 196);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+}
+
+.page__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 32px;
+  text-align: left;
+}
+
+.page__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-container {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container__input {
+  box-sizing: border-box;
+  display: block;
+  width: 75%;
+  max-width: 600px;
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.search-container__input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+}
+
+.results-container {
+  box-sizing: border-box;
+  background: rgb(227, 227, 227);
+  width: 100%;
+  max-width: 600px;
+}
+
+.repositories-info {
+  width: 100%;
+  max-width: 600px;
+}
+
+.repositories-item {
+  padding: 10px;
+  background: #e3e3e3;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.repositories-item:hover {
+  background-color: #65cdf9;
+}
+
+.repositories-item a {
+  text-decoration: none;
+  color: #000;
+}
+
+.repository-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 8px 16px;
+  background-color: #e27beb;
+  border-radius: 3px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.repository-info-item:hover {
+  border-color: #65cdf9;
+}
+
+.repository-info-items__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: black;
+}
+
+.remove-button {
+  position: absolute;
+  right: 16px;
+  bottom: 3px;
+  top: 0;
+  background: none;
+  color: red;
+  font-size: 35px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3ms ease-in-out;
+}
+
+.remove-button:hover {
+  transform: scale(1.1);
+}
